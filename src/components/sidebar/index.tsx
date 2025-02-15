@@ -1,5 +1,6 @@
 import { Button } from "../ui/button";
-import { Sheet, SheetTrigger } from "../ui/sheet";
+import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
+import Link from "next/link";
 
 export function SideBar() {
   return (
@@ -10,6 +11,13 @@ export function SideBar() {
             <SheetTrigger>
               <Button>Abrir</Button>
             </SheetTrigger>
+            <SheetContent>
+              <nav>
+                <Link href="#">
+                  <span>Logo</span>
+                </Link>
+              </nav>
+            </SheetContent>
           </Sheet>
         </header>
       </div>
