@@ -18,11 +18,11 @@ export function ChartOverview() {
   const chartConfig = {
     desktop: {
       label: "Desktop",
-      color: "#2563eb",
+      color: "#DC2626",
     },
     mobile: {
       label: "Mobile",
-      color: "#60a5fa",
+      color: "#DC2626",
     },
   } satisfies ChartConfig;
 
@@ -30,7 +30,7 @@ export function ChartOverview() {
     <Card className="w-full md:w-1/2 md:max-w-[600px]">
       <CardHeader>
         <div className="flex items-center justify-center">
-          <CardTitle className="text-lg sm:text-xl text-gray-900">
+          <CardTitle className="text-lg sm:text-xl text-primary">
             Overview Geral de vendas
           </CardTitle>
           <DollarSign className="ml-auto w-5 h-5" />

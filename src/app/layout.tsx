@@ -1,3 +1,4 @@
+import { ThemeProvider } from "@/components/theme-provider";
 import type { Metadata } from "next";
 import "./globals.css";
 import { SideBar } from "@/components/sidebar";
@@ -15,8 +16,15 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body>
-        <SideBar />
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="light"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <SideBar />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
