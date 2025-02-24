@@ -18,11 +18,11 @@ export function ChartOverview() {
   const chartConfig = {
     desktop: {
       label: "Desktop",
-      color: "#DC2626",
+      color: "#145cf2",
     },
     mobile: {
       label: "Mobile",
-      color: "#DC2626",
+      color: "#145cf2",
     },
   } satisfies ChartConfig;
 
